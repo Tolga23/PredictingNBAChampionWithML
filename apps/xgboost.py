@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-from openpyxl import Workbook
 
 from sklearn.metrics import mean_absolute_error
 from xgboost import XGBRegressor
