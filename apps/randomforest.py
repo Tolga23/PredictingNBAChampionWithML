@@ -72,6 +72,3 @@ def app():
         i += 1
     st.table(rfr_wins_predicted_df.sort_values(by="Playoff Wins", ascending=False))
 
-    if st.button('Download'):
-        rfr_wins_predicted_df.to_excel('./rfr_wins_predicted.xlsx', index=False)
-        st.success('Excel File downloaded successfully')

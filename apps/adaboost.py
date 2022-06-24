@@ -56,10 +56,7 @@ def app():
         i += 1
     st.table(ada_wins_predicted_df.sort_values(by="Playoff Wins", ascending=False))
 
-    if st.button('Download'):
-        ada_wins_predicted_df.to_excel('./ada_wins_predicted.xlsx', index=False)
-        st.success('Excel File downloaded successfully')
-        
+   
 
 
 

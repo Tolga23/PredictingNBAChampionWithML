@@ -65,7 +65,3 @@ def app():
         xgb_predicted_wins_df.at[i, 'Playoff Wins'] = xgb_predicted_wins[i]
         i+=1
     st.table(xgb_predicted_wins_df.sort_values(by='Playoff Wins',ascending=False))
-
-    if st.button('Download'):
-        xgb_predicted_wins_df.to_excel('./xgb_wins_predicted.xlsx', index=False)
-        st.success('Excel File downloaded successfully')
